@@ -14,3 +14,7 @@ the name of the deployment could be different in your subscription
 In my case the gpt4 1106 is named  **gpt-4turbo**
 
 You could use the notebook python to launch the demo.
+
+If you correctly modify the information in the secrets_env renamed in secrets.env.
+You will have to click on each code step by the play button, it there is no erros you will obtain at the last cell this 
+![Result Json](./assets/resultjson.png)
