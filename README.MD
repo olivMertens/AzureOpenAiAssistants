@@ -73,10 +73,60 @@ You have to understand how manage thread and message ?
 
 ### format of the message json
 
-![Result Json](./assets/resultjson.png)
+```json
+{
+  "data": [
+    {
+      "id": "msg_5Oc2nmN7boHKfYuJaOnxkYrQ",
+      "assistant_id": "asst_vid43QSBUFAVr7f7nraAwfkS", // the id of the assistant
+      "content": [
+        {
+          "text": {
+            "annotations": [],
+            "value": "The solution to the equation \\(3x + 11 = 14\\) is \\(x = 1\\)." // the result of the assistant
+          },
+          "type": "text"
+        }
+      ],
+      "created_at": 1706827368,
+      "file_ids": [],
+      "metadata": {},
+      "object": "thread.message",
+      "role": "assistant",
+      "run_id": "run_VlCTYceNmV8HlQyOLQUe7Xj6",
+      "thread_id": "thread_KM402gTevvYxlfxYA1ONQPHP"
+    },
+    {
+      "id": "msg_ZHWVk1gJT292L4YJzlbLjmFq",
+      "assistant_id": null,
+      "content": [
+        {
+          "text": {
+            "annotations": [],
+            "value": "I need to solve the equation `3x + 11 = 14`. Can you help me?" // the rquest of the user
+          },
+          "type": "text"
+        }
+      ],
+      "created_at": 1706827327,
+      "file_ids": [],
+      "metadata": {},
+      "object": "thread.message",
+      "role": "user",
+      "run_id": null,
+      "thread_id": "thread_KM402gTevvYxlfxYA1ONQPHP" // the id of the thread
+    }
+  ],
+  "object": "list",
+  "first_id": "msg_5Oc2nmN7boHKfYuJaOnxkYrQ",
+  "last_id": "msg_ZHWVk1gJT292L4YJzlbLjmFq",
+  "has_more": false
+}
+
+```	
 
 ### Params of the assistant
-Extract from  openAi [library python](https://github.com/openai/openai-python/blob/main/src/openai/resources/beta/assistants/assistants.py
+Extract from  openAi [library python](https://github.com/openai/openai-python/blob/main/src/openai/resources/beta/assistants/assistants.py)
 
 Tools :
 A list of tool enabled on the assistant. There can be a maximum of 128 tools per
