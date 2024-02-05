@@ -1,7 +1,9 @@
-# Demo Azure Open Ai Assistants
+# Azure Open Ai Assistants
 ![Azure openAi assistants ](./assets/assistant.jpeg)
 
-this demo is based on this page  [Learn Microsoft website](https://learn.microsoft.com/en-us/azure/ai-services/openai/assistants-quickstart?branch=pr-en-us-264938&tabs=command-line&pivots=programming-language-python#create-your-first-assistant)
+this demo is based on  [Learn Microsoft website](https://learn.microsoft.com/en-us/azure/ai-services/openai/assistants-quickstart?branch=pr-en-us-264938&tabs=command-line&pivots=programming-language-python#create-your-first-assistant)
+
+Some other jupyter notebook will be available in the repository to show how to use the assistant in a more complexe way.
 
 ## Create your first assistant
 
@@ -12,15 +14,17 @@ An assistant ( or many !) can perform a wide range of tasks, such as answering q
 An assistand could have some tools :
 - based on files ( retrieval)
 - code interpreter
-- functions, Apis 
+- Functions
+- Apis 
 
 You can use assistants to build a wide range of applications, such as chatbots, virtual agents, and more.
 
 In clear you could create in a few line of code some assistant with tool to create a pipeline of threads in order to adresse an ask or demand of the user.
 
-You can in fact create multiple assistants with different tools and diffrent thread (async or not) to adress the demand of the user.
+You can create multiple assistants with different tools one different thread (async or not) to resolve a problem or to give a response to a user.
 
-And you will retrieve response in json format. where you can make some process or create orchestrate with :
+And you will retrieve response in json format.
+You can make some process or create orchestrate with :
 - Thread id
 - Message id
 - assistant id
@@ -60,9 +64,10 @@ it there is no errors you will obtain at the last cell this json dump with the r
 ![Result Json](./assets/resultjson.png)
 
 When you are ready you can follow the steps in AzureAOAI.ipynb notebook
-> In my case the gpt4 1106 is named  **gpt-4turbo**
+> In my case model gpt4-1106 is named  **gpt-4turbo**
 
-You could now use the notebook python to launch the demo.
+You could now use the notebook python in visual studio code if you want to make some process on the result or create some orchestration with the result of the assistant.
+> AoaiAssistant.ipynb
 
 ## DeepDive Aassistant instance
 
@@ -114,12 +119,12 @@ You have to understand how manage thread and message ?
       "object": "thread.message",
       "role": "user",
       "run_id": null,
-      "thread_id": "thread_KM402gTevvYxlfxYA1ONQPHP" // the id of the thread
+      "thread_id": "thread_KM402gTevvYxlfxYA1ONQPHP" // id of the thread
     }
   ],
   "object": "list",
-  "first_id": "msg_5Oc2nmN7boHKfYuJaOnxkYrQ",
-  "last_id": "msg_ZHWVk1gJT292L4YJzlbLjmFq",
+  "first_id": "msg_5Oc2nmN7boHKfYuJaOnxkYrQ", // the id of the first message - request user
+  "last_id": "msg_ZHWVk1gJT292L4YJzlbLjmFq", // Last message of the thread
   "has_more": false
 }
 
