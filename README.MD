@@ -11,7 +11,7 @@ Some other jupyter notebook will be available in the repository to show how to u
 
 An assistant ( or many !) can perform a wide range of tasks, such as answering questions, providing recommendations, and executing commands 
 
-An assistand could have some tools :
+An assistant could have some tools :
 - based on files ( retrieval)
 - code interpreter
 - Functions
@@ -31,10 +31,20 @@ You can make some process or create orchestrate with :
 
 > Multi-Assistant Thread Runs with parallel function calls
 
+### List of assistants demos
+
+The first demo at the root of the repository is a simple assistant based on the documentation of Microsoft.
+> AoaiAssistant.ipynb
+
+| Name scenario | Description notebook | Link |
+| ----- | ----------- | -------- |
+| Math solving Assistant|  1 assistant with only code interpreter as tool | [AoaiAssistant.ipynb](AoaiAssistant.ipynb) |
+| Title 2 | Description of Notebook 2 | [Notebook 2](link_to_notebook_2) |
+
 
 ### Prerequisites
 
-you will need :
+you will need if you want to test the notebook:
 - python 3.8 or later
 - visual studio code and plugins for python and notebook
     - Jupyter / jupyter Keymap / jupyter Cell Tags
@@ -66,8 +76,9 @@ it there is no errors you will obtain at the last cell this json dump with the r
 When you are ready you can follow the steps in AzureAOAI.ipynb notebook
 > In my case model gpt4-1106 is named  **gpt-4turbo**
 
-You could now use the notebook python in visual studio code if you want to make some process on the result or create some orchestration with the result of the assistant.
-> AoaiAssistant.ipynb
+You could now use the notebook python in visual studio code if you want to make some process on the result or create some orchestration with the result of the assistant :
+
+
 
 ## DeepDive Aassistant instance
 
