@@ -39,7 +39,6 @@ The first demo at the root of the repository is a simple assistant based on the 
 | Name scenario | Description notebook | Link |
 | ----- | ----------- | -------- |
 | Math solving Assistant|  1 assistant with only code interpreter as tool | [AoaiAssistant.ipynb](AoaiAssistant.ipynb) |
-| Title 2 | Description of Notebook 2 | [Notebook 2](link_to_notebook_2) |
 
 
 ### Prerequisites
@@ -82,10 +81,10 @@ You could now use the notebook python in visual studio code if you want to make 
 
 ## DeepDive Aassistant instance
 
-### how the interaction with the assistant is done
+### Understand the interaction assistant / thread / message
 
-So you have instantiante an assistant ?
-You have to understand how manage thread and message ?
+Do you have created an assistant ?
+Do you want to understand how manage thread and message ?
 
 ### format of the message json
 
@@ -140,10 +139,17 @@ You have to understand how manage thread and message ?
 }
 
 ```	
+The code interpreter tools convert in python code if you want to verify the solution of the assistant for mathematics problem
+with dedicate library like sympy or numpy
 
-### Params of the assistant
-Extract from  openAi [library python](https://github.com/openai/openai-python/blob/main/src/openai/resources/beta/assistants/assistants.py)
+### Params assistant
 
-Tools :
+Theses informations are extracted from the openAi library in python
+ [library python](https://github.com/openai/openai-python/blob/main/src/openai/resources/beta/assistants/assistants.py)
+
+
+
+- Tools :
 A list of tool enabled on the assistant. There can be a maximum of 128 tools per
   assistant. Tools can be of types `code_interpreter`, `retrieval`, or `function`.
+- Name : The name of the assistant.
