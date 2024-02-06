@@ -1,9 +1,11 @@
-# Azure Open Ai Assistants
+# Azure Open Ai Assistants 
 ![Azure openAi assistants ](./assets/assistant.jpeg)
 
 this demo is based on  [Learn Microsoft website](https://learn.microsoft.com/en-us/azure/ai-services/openai/assistants-quickstart?branch=pr-en-us-264938&tabs=command-line&pivots=programming-language-python#create-your-first-assistant)
 
-Some other jupyter notebook will be available in the repository to show how to use the assistant in a more complexe way.
+Some other jupyter notebook will be available in the repository to show how to use  assistants in a more complexe way.
+
+This demo will use python, library openAi and azure to create an assistant and to use it in a jupyter notebook.
 
 ## Create your first assistant
 
