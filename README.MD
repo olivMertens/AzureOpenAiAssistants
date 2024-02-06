@@ -88,6 +88,33 @@ You could now use the notebook python in visual studio code if you want to make 
 Do you have created an assistant ?
 Do you want to understand how manage thread and message ?
 
+It respect a specific flow to create a thread and to manage the message in the thread.
+
+``` mermaid
+
+sequenceDiagram  
+    participant A as Assistant Creation  
+    participant B as Thread Creation  
+    participant C as User Message Creation  
+    participant D as Thread Execution  
+    participant E as Run Status Retrieval  
+    participant F as Status Check Loop  
+    participant G as Messages Retrieval  
+  
+    A->>B: Create Assistant with Model  
+    B->>C: Create Thread  
+    C->>D: Add User Message to Thread  
+    D->>E: Execute Thread  
+    E->>F: Retrieve Run Status  
+    F->>F: Loop until status is final  
+    F-->>G: Status: completed  
+    Note right of G: Fetch and display messages  
+    F-->>A: Status: cancelled  
+    F-->>A: Status: expired  
+    F-->>A: Status: failed  
+
+```
+
 ### format of the message json
 
 ```json
