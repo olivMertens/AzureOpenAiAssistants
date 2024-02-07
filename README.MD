@@ -7,6 +7,10 @@ Some other jupyter notebook will be available in the repository to show how to u
 
 This demo will use python, library openAi and azure to create an assistant to use it in a jupyter notebook.
 
+If you want to directly test in Azure Ai studio it's here [Azure OpenAi studio](https://oai.azure.com/)
+> [Documentation for Azure Ai studio](https://learn.microsoft.com/en-us/azure/ai-services/openai/assistants-quickstart?tabs=command-line&pivots=programming-language-studio)
+
+
 ## Create your first assistant
 
 ### What's an assistant?
