@@ -1,11 +1,11 @@
 # Azure Open Ai Assistants 
 ![Azure openAi assistants ](./assets/assistant.jpeg)
 
-this demo is based on  [Learn Microsoft website](https://learn.microsoft.com/en-us/azure/ai-services/openai/assistants-quickstart?branch=pr-en-us-264938&tabs=command-line&pivots=programming-language-python#create-your-first-assistant)
+this demo is based on [Learn Microsoft website](https://learn.microsoft.com/en-us/azure/ai-services/openai/assistants-quickstart?branch=pr-en-us-264938&tabs=command-line&pivots=programming-language-python#create-your-first-assistant)
 
-Some other jupyter notebook will be available in the repository to show how to use  assistants in a more complexe way.
+Some other jupyter notebook will be available in the repository to show how to use assistants in a more complex way.
 
-This demo will use python, library openAi and azure to create an assistant and to use it in a jupyter notebook.
+This demo will use python, library openAi and azure to create an assistant to use it in a jupyter notebook.
 
 ## Create your first assistant
 
@@ -21,19 +21,23 @@ An assistant could have some tools :
 
 You can use assistants to build a wide range of applications, such as chatbots, virtual agents, and more.
 
-In clear you could create in a few line of code some assistant with tool to create a pipeline of threads in order to adresse an ask or demand of the user.
+In clear you could create in a few line of code some assistant with tool(s) to create a pipeline of threads in order to adresse an ask or demand of the user.
 
-You can create multiple assistants with different tools one different thread (async or not) to resolve a problem or to give a response to a user.
+> in the same idea you could use different model by assistant to have a better response or to limit the cost of the assistant
 
-And you will retrieve response in json format.
-You can make some process or create orchestrate with :
+You can create multiple assistants with different tools on one thread (async or not) to resolve a problem or to give a response to a user, you could also have diffents threads with different assistants
+> Multi-Assistant Thread Runs with parallel function calls
+
+In the end with this library you will retrieve response in json format, format easy to use in python and to make some process on it.
+
+to create an orchestration of the assistant you will have to manage these:
 - Thread id
 - Message id
 - assistant id
 
-> Multi-Assistant Thread Runs with parallel function calls
 
-### List of assistants demos
+
+### List of demos for assistants usecase
 
 The first demo at the root of the repository is a simple assistant based on the documentation of Microsoft.
 > AoaiAssistant.ipynb
@@ -57,7 +61,12 @@ you will need if you want to test the notebook:
 - Deploy the service in portal azure for Azure open Ai service in the region accordly
 - Make a deployment of the model in the [azure openAi service Ai studio](https://oai.azure.com/), give a name of deployment
 
-For the name of the deployment ( you gave a name normally ) in Azure Ai studio, you can find it in the deployment section of the model if you don't remind it
+__or__
+
+Codespace to use the notebook in the cloud with Github
+
+For the name of the deployment for the model ( you gave a name normally ) 
+in Azure Ai studio, you can find it in the deployment section of the model if you don't remind it
 ![image](./assets/azuredeployment.png)
 
 You have to correctly modify the information in the secrets_env renamed in secrets.env
@@ -69,26 +78,24 @@ or
 And after you will have to click on the button "show secret" to obtain the key and the endpoint is displayed in the example code
 ![image](./assets/endpoint&token.png)
 
-You will have to click on each code step by the play button.
+You will have to click on each code step by the play button on the left of each cell
 
 it there is no errors you will obtain at the last cell this json dump with the result and all the informations gathered 
 ![Result Json](./assets/resultjson.png)
 
 When you are ready you can follow the steps in AzureAOAI.ipynb notebook
-> In my case model gpt4-1106 is named  **gpt-4turbo**
+> In my case my model deplyment for gpt4-1106 is named  **gpt-4turbo**
 
-You could now use the notebook python in visual studio code if you want to make some process on the result or create some orchestration with the result of the assistant :
-
-
+You could now use the notebook python in visual studio code ( or inside a browser with codespace ) if you want to make some process on the result or some orchestration with the result of the assistant :
 
 ## DeepDive Aassistant instance
 
 ### Understand the interaction assistant / thread / message
 
 Do you have created an assistant ?
-Do you want to understand how manage thread and message ?
+Do you want to understand how manage thread and messages ?
 
-It respect a specific flow to create a thread and to manage the message in the thread.
+It respect a specific flow to create a thread and to manage  message in a thread.
 
 ``` mermaid
 
@@ -168,15 +175,14 @@ sequenceDiagram
 }
 
 ```	
-The code interpreter tools convert in python code if you want to verify the solution of the assistant for mathematics problem
+The code interpreter tools convert in python code.
+In this usecase, if you want to verify the solution of the assistant for mathematics problem
 with dedicate library like sympy or numpy
 
 ### Params assistant
 
 Theses informations are extracted from the openAi library in python
- [library python](https://github.com/openai/openai-python/blob/main/src/openai/resources/beta/assistants/assistants.py)
-
-
+ [library python openai](https://github.com/openai/openai-python/blob/main/src/openai/resources/beta/assistants/assistants.py)
 
 - Tools :
 A list of tool enabled on the assistant. There can be a maximum of 128 tools per
