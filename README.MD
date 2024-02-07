@@ -14,14 +14,14 @@ This demo will use python, library openAi and azure to create an assistant to us
 An assistant ( or many !) can perform a wide range of tasks, such as answering questions, providing recommendations, and executing commands 
 
 An assistant could have some tools :
-- based on files ( retrieval)
-- code interpreter
-- Functions
-- Apis 
+- Tool retrieval
+- Tool code interpreter
+- Tool Functions(Apis) 
 
 You can use assistants to build a wide range of applications, such as chatbots, virtual agents, and more.
 
 In clear you could create in a few line of code some assistant with tool(s) to create a pipeline of threads in order to adresse an ask or demand of the user.
+the assistant will take the correct tool for the demand according to the ask of the user.
 
 > in the same idea you could use different model by assistant to have a better response or to limit the cost of the assistant
 
@@ -54,8 +54,8 @@ you will need if you want to test the notebook in local:
 - visual studio code and plugins :
     - Jupyter / jupyter Keymap / jupyter Cell Tags
     - Jupyter Notebook renderers
-- An Azure subscription 
-- Access to Azure openAi service [Request an access](https://aka.ms/oai/access)
+- An [Azure subscription - 200 $ for first subscription](https://azure.microsoft.com/en-us/free/) 
+- Access to Azure OpenAi service [Request an access for AOAI](https://aka.ms/oai/access)
 - Access to the lastet gpt4 1106 model ( Actually deployed actually in sweden , east us and west us 2)
     - you can refer to this link for the avaibility of model in region [Azure OpenAi model](https://docs.microsoft.com/en-us/azure/ai-services/openai/region-availability)
 - Deploy the service in portal azure for Azure open Ai service in the region accordly
@@ -190,3 +190,8 @@ Theses informations are extracted from the openAi library in python
 A list of tool enabled on the assistant. There can be a maximum of 128 tools per
   assistant. Tools can be of types `code_interpreter`, `retrieval`, or `function`.
 - Name : The name of the assistant.
+
+## Referals links
+
+- [Assistants in-a-Box](https://github.com/Azure/AI-in-a-Box/tree/main/gen-ai/Assistants)
+- [Announcement Assistants technical blog](https://techcommunity.microsoft.com/t5/ai-azure-ai-services-blog/azure-openai-service-announces-assistants-api-new-models-for/ba-p/4049940)
