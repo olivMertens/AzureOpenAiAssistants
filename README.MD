@@ -101,6 +101,8 @@ You could now use the notebook python in visual studio code ( or inside a browse
 Do you have created an assistant ?
 Do you want to understand how manage thread and messages ?
 
+First of all take a look at the documentations for understanding and started with assistants [on this link](https://learn.microsoft.com/en-us/azure/ai-services/openai/how-to/assistant)
+
 It respect a specific flow to create a thread and to manage  message in a thread.
 
 ``` mermaid
@@ -199,3 +201,4 @@ A list of tool enabled on the assistant. There can be a maximum of 128 tools per
 
 - [Assistants in-a-Box](https://github.com/Azure/AI-in-a-Box/tree/main/gen-ai/Assistants)
 - [Announcement Assistants technical blog](https://techcommunity.microsoft.com/t5/ai-azure-ai-services-blog/azure-openai-service-announces-assistants-api-new-models-for/ba-p/4049940)
+- [Getting started with assistants](https://learn.microsoft.com/en-us/azure/ai-services/openai/how-to/assistant)
