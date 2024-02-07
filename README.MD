@@ -37,7 +37,7 @@ to create an orchestration of the assistant you will have to manage these:
 
 
 
-### List of demos for assistants usecase
+### List of demos for usecase
 
 The first demo at the root of the repository is a simple assistant based on the documentation of Microsoft.
 > AoaiAssistant.ipynb
@@ -49,13 +49,13 @@ The first demo at the root of the repository is a simple assistant based on the 
 
 ### Prerequisites
 
-you will need if you want to test the notebook:
+you will need if you want to test the notebook in local:
 - python 3.8 or later
-- visual studio code and plugins for python and notebook
+- visual studio code and plugins :
     - Jupyter / jupyter Keymap / jupyter Cell Tags
     - Jupyter Notebook renderers
-- An azure subscription 
-- Access to azure openAi service
+- An Azure subscription 
+- Access to Azure openAi service [Request an access](https://aka.ms/oai/access)
 - Access to the lastet gpt4 1106 model ( Actually deployed actually in sweden , east us and west us 2)
     - you can refer to this link for the avaibility of model in region [Azure OpenAi model](https://docs.microsoft.com/en-us/azure/ai-services/openai/region-availability)
 - Deploy the service in portal azure for Azure open Ai service in the region accordly
@@ -64,7 +64,9 @@ you will need if you want to test the notebook:
 __or__
 
 Codespace to use the notebook in the cloud with Github
+![Codespace](./assets/codespace.png)
 
+### Gather informations for the notebook
 For the name of the deployment for the model ( you gave a name normally ) 
 in Azure Ai studio, you can find it in the deployment section of the model if you don't remind it
 ![image](./assets/azuredeployment.png)
@@ -122,7 +124,7 @@ sequenceDiagram
 
 ```
 
-### format of the message json
+### format of json message
 
 ```json
 {
@@ -179,7 +181,7 @@ The code interpreter tools convert in python code.
 In this usecase, if you want to verify the solution of the assistant for mathematics problem
 with dedicate library like sympy or numpy
 
-### Params assistant
+### Parameters assistant
 
 Theses informations are extracted from the openAi library in python
  [library python openai](https://github.com/openai/openai-python/blob/main/src/openai/resources/beta/assistants/assistants.py)
