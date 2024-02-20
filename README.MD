@@ -20,7 +20,7 @@ An assistant ( or many !) can perform a wide range of tasks, such as answering q
 An assistant could have some tools :
 - Tool retrieval
 - Tool code interpreter
-- Tool Functions(Apis) 
+- Tool Functions ( so could connect to Apis) 
 
 You can use assistants to build a wide range of applications, such as chatbots, virtual agents, and more.
 
@@ -62,7 +62,7 @@ you will need if you want to test the notebook in local:
 - Access to Azure OpenAi service [Request an access for AOAI](https://aka.ms/oai/access)
 - Access to the lastet gpt4 1106 model ( Actually deployed actually in sweden , east us and west us 2)
     - you can refer to this link for the avaibility of model in region [Azure OpenAi model](https://docs.microsoft.com/en-us/azure/ai-services/openai/region-availability)
-- Other models are compatible to use with this feature
+- Other models are compatible for agents feature
 ![models capabilities for agents](./assets/modelsagentsaoai.png)
 
 - Deploy the service in portal azure for Azure open Ai service in the region accordly
