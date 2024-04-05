@@ -15,16 +15,16 @@ If you want to directly test in Azure Ai studio it's here [Azure OpenAi studio](
 
 ### What's an assistant?
 
-An assistant ( or many !) can perform a wide range of tasks, such as answering questions, providing recommendations, and executing commands 
+An assistant ( or many who can work together !) can perform a wide range of tasks, such as answering questions, providing recommendations, and executing commands with the help of tools. 
 
 An assistant could have some tools :
-- Tool retrieval
-- Tool code interpreter
+- Tool retrieval ( RAG ..)
+- Tool code interpreter ( code launch by the assistant )
 - Tool Functions ( so could connect to Apis) 
 
 You can use assistants to build a wide range of applications, such as chatbots, virtual agents, and more.
 
-In clear you could create in a few line of code some assistant with tool(s) to create a pipeline of threads in order to adresse an ask or demand of the user.
+In clear you could create in a few line of code some assistant with tool(s) to create a pipeline of threads in order to adresse an ask or demand from the user.
 the assistant will take the correct tool for the demand according to the ask of the user.
 
 > in the same idea you could use different model by assistant to have a better response or to limit the cost of the assistant
