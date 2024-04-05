@@ -56,12 +56,12 @@ The first demo at the root of the repository is a simple assistant based on the 
 you will need if you want to test the notebook in local:
 - python 3.8 or later
 - visual studio code and plugins :
-    - Jupyter / jupyter Keymap / jupyter Cell Tags
+    - Jupyter / Jupyter Keymap / jupyter Cell Tags
     - Jupyter Notebook renderers
 - An [Azure subscription - 200 $ for first subscription](https://azure.microsoft.com/en-us/free/) 
 - Access to Azure OpenAi service [Request an access for AOAI](https://aka.ms/oai/access)
-- Access to the lastet gpt4 1106 model ( Actually deployed actually in sweden , east us and west us 2)
-    - you can refer to this link for the avaibility of model in region [Azure OpenAi model](https://docs.microsoft.com/en-us/azure/ai-services/openai/region-availability)
+- Access to the lastet gpt4 0125 model ( Actually availables Sweden Central, West US, Japan East)
+    - Refer to this link for the avaibility of model in region [Azure OpenAi model](https://learn.microsoft.com/en-us/azure/ai-services/openai/concepts/models)
 - Other models are compatible for agents feature
 ![models capabilities for agents](./assets/modelsagentsaoai.png)
 
@@ -74,12 +74,12 @@ Codespace to use the notebook in the cloud with Github
 ![Codespace](./assets/codespace.png)
 
 ### Gather informations for the notebook
-For the name of the deployment for the model ( you gave a name normally ) 
+For the name of the deployment for the model ( you gave a name normally which could be different from the name of model when you had deploy it) 
 in Azure Ai studio, you can find it in the deployment section of the model if you don't remind it
 ![image](./assets/azuredeployment.png)
 
 You have to correctly modify the information in the secrets_env renamed in secrets.env
-> the azure endpoint and the azure key aoai could be found in your azure portal
+> the azure endpoint and the azure key for Open Ai service could be found in your azure portal / subscription
 ![image](./assets/portailazurekeyaoai.png)
 or
 > directly in the conversation category in Ai studio ,with the model selected and the button code clicked in first step
@@ -104,7 +104,7 @@ You could now use the notebook python in visual studio code ( or inside a browse
 Do you have created an assistant ?
 Do you want to understand how manage thread and messages ?
 
-First of all take a look at the documentations for understanding and started with assistants [on this link](https://learn.microsoft.com/en-us/azure/ai-services/openai/how-to/assistant)
+First of all [take a look at the documentations for understanding and started with assistants](https://learn.microsoft.com/en-us/azure/ai-services/openai/how-to/assistant)
 
 It respect a specific flow to create a thread and to manage  message in a thread.
 
